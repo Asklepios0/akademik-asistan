@@ -1,0 +1,16 @@
+{
+  "short_name": "Akademik Asistan",
+  "name": "Akademik Asistan - Üniversite Ders Programı",
+  "icons": [
+    {
+      "src": "/akademik-asistan/assets/icon.png",
+      "sizes": "192x192 512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/akademik-asistan/",
+  "background_color": "#0F172A",
+  "theme_color": "#0F172A",
+  "display": "standalone",
+  "orientation": "portrait"
+}
