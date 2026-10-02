@@ -351,7 +351,10 @@ export default function App() {
       language={currentLang}
       onLanguageChange={(newLang) => handleUpdateSettings({ language: newLang })}
     >
-      <SafeAreaView style={[styles.safeArea, { backgroundColor: appBgColor }]}>
+      <SafeAreaView
+        style={[styles.safeArea, { backgroundColor: appBgColor }]}
+        accessibilityLanguage={currentLang === 'en' ? 'en-US' : 'tr-TR'}
+      >
         <StatusBar
           barStyle={isLight ? 'dark-content' : 'light-content'}
           backgroundColor={appBgColor}

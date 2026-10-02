@@ -90,6 +90,9 @@ const CourseCardComponent: React.FC<CourseCardProps> = ({
         { borderLeftColor: course.isCancelledToday ? '#EF4444' : course.color || '#3B82F6' },
         course.isCancelledToday && styles.cancelledCard,
       ]}
+      accessible={true}
+      accessibilityRole="text"
+      accessibilityLabel={`${course.name}. Saat ${course.startTime} ile ${course.endTime} arası.${course.classroom ? ` Derslik ${course.classroom}.` : ''}${course.instructor ? ` Öğretim görevlisi ${course.instructor}.` : ''}${course.isCancelledToday ? ' Ders bugün iptal edildi.' : ''}${statusInfo && statusInfo.status === 'ongoing' ? ' Şu an devam ediyor.' : ''}`}
     >
       {/* Top row: Time, Category & Status Badges */}
       <View style={styles.topRow}>

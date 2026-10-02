@@ -76,6 +76,10 @@ export const BottomNav: React.FC<BottomNavProps> = ({
             style={styles.tabButton}
             onPress={() => handleTabPress(t.key)}
             activeOpacity={0.7}
+            accessible={true}
+            accessibilityRole="tab"
+            accessibilityState={{ selected: isActive }}
+            accessibilityLabel={`${t.label}${t.badge ? `, ${t.badge} bekleyen görev` : ''}`}
           >
             <View
               style={[
