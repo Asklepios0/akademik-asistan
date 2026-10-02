@@ -1,47 +1,80 @@
 # 🎓 Akademik Asistan - Kişisel Üniversite Asistanı
 
-Üniversite sürecinizde haftalık ders programınızı yönetmenizi sağlayan, ders ve hoca ilişkilerinden akıllı tahminler üreten ve dersleriniz başlamadan önce telefonunuza bildirim gönderen modern mobil uygulama.
+Üniversite sürecinizde haftalık ders programınızı yönetmenizi sağlayan, ders ve hoca ilişkilerinden akıllı tahminler üreten, vize/final ve devamsızlıklarınızı takip eden modern mobil ve web uygulaması.
 
 ---
 
-## ✨ Özellikler
+## 🌐 Canlı Uygulama (Hemen Kullanın)
+
+Herhangi bir kurulum yapmadan tarayıcınızdan veya telefonunuzdan anında erişebilirsiniz:
+
+👉 **[https://asklepios0.github.io/akademik-asistan/](https://asklepios0.github.io/akademik-asistan/)**
+
+---
+
+## 📱 Telefonda Mobil Uygulama Gibi Kullanma (Kurulumsuz & Ücretsiz)
+
+Uygulama **Progressive Web App (PWA)** standartlarında geliştirilmiştir. App Store veya Google Play'e ihtiyaç duymadan telefonunuzun ana ekranına ekleyerek **tam ekran, bildirim çubuğuyla uyumlu, yerel bir mobil uygulama gibi** kullanabilirsiniz:
+
+### 🍏 iPhone (iOS) Kullanıcıları İçin:
+1. iPhone'unuzda **Safari** tarayıcısını açın ve siteye gidin:  
+   👉 `https://asklepios0.github.io/akademik-asistan/`
+2. Ekranın alt kısmında yer alan **Paylaş (Share)** simgesine dokunun *(kare içinden yukarı doğru ok çıkan buton)*.
+3. Açılan menüde aşağı kaydırıp **"Ana Ekrana Ekle" (Add to Home Screen)** seçeneğine dokunun.
+4. Sağ üstteki **"Ekle"** butonuna basarak onaylayın.
+
+> ✨ **Sonuç:** Akademik Asistan, telefonunuzun ana ekranına özel logosu ve ismiyle bir iPhone uygulaması olarak eklenir. Açtığınızda Safari adres çubukları gizlenir, tam ekran yerel uygulama deneyimi sunar.
+
+---
+
+### 🤖 Android Kullanıcıları İçin:
+1. **Google Chrome** tarayıcınızda siteye gidin:  
+   👉 `https://asklepios0.github.io/akademik-asistan/`
+2. Sağ üst köşedeki **üç nokta (⋮)** simgesine dokunun.
+3. Menüden **"Uygulamayı Yükle"** veya **"Ana Ekrana Ekle"** seçeneğini seçin.
+4. Çıkan onay penceresinde **"Yükle"** butonuna basın.
+
+> ✨ **Sonuç:** Uygulama çekmecesine ve ana ekranınıza yerleşir, bağımsız bir Android uygulaması gibi çalışır.
+
+---
+
+## ✨ Öne Çıkan Özellikler
 
 - 📅 **Haftalık Ders Programı**: Pazartesi - Pazar günleri arasında ders adı, saati, sınıfı (D7, D4, Amfi vb.) ve hocasını kolayca ekleme/düzenleme/silme.
 - ⚡ **Günün Akışı & Canlı Geri Sayım**:
   - Aktif derste canlı ilerleme çubuğu (*"Bitmesine 25 dk kaldı"*).
-  - Sıradaki derse kaç dakika kaldığını gösteren sayaç.
+  - Sıradaki derse kaç dakika kaldığını gösteren geri sayım sayacı.
 - 💡 **Akıllı Tahmin & Öneri Sistemi (Predictive Autofill)**:
-  - Bir hocanın adını yazdığınızda o hocanın daha önce verdiği dersleri ve girdiği sınıfları otomatik tahmin eder.
-  - *"✨ Tek Tıkla Otomatik Doldur"* butonu ile tüm bilgileri saniyeler içinde tamamlar.
-- 🔔 **Ders Öncesi Yerel Bildirimler**:
-  - Belirlediğiniz süre önce (*10 dk, 15 dk, 30 dk, 1 saat*) telefonunuza bildirim gönderir.
-  - İnternet bağlantısı gerektirmez.
+  - Bir hocanın adını yazdığınızda o hocanın daha önce verdiği dersleri ve girdiği sınıfları otomatik hatırlar.
+  - *"✨ Tek Tıkla Otomatik Doldur"* butonu ile bilgileri saniyeler içinde tamamlar.
+- 🖼️ **Kilit Ekranı Duvar Kağıdı Oluşturucu**:
+  - Haftalık ders programınızı telefonunuzun ekran oranına özel yüksek çözünürlüklü şık bir kilit ekranı posterine dönüştürür.
 - 📊 **Notlar, Sınavlar & Devamsızlık Modülü**:
   - Dönem Genel Not Ortalaması (GNO) hesaplayıcı.
-  - Vize/Final sınav takvimi ve devamsızlık takip arayüzü (ilerideki geliştirmeler için hazır).
-- ⚙️ **Yedekleme & Test**:
-  - Anında 2 saniyelik test bildirimi atarak bildirim motorunu test etme.
-  - Tüm dersleri yedekleme ve geri yükleme.
+  - Vize/Final sınav takvimi ve devamsızlık hakları takip sistemi.
+- 🔒 **Güvenlik & Gizlilik**:
+  - 4 haneli PIN kodu koruması ile kişisel ders notlarınızı kilitleme.
+  - Tüm veriler cihazınızda yerel olarak (AsyncStorage / LocalStorage) saklanır; internete veri sızmaz.
 
 ---
 
-## 🚀 Telefonunuzda Nasıl Çalıştırırsınız?
+## 🚀 Geliştiriciler & Alternatif Çalıştırma Seçenekleri
 
-### Seçenek 1: APK Olarak Yükleme (Doğrudan Telefona Kurulum)
-1. Proje ana dizinindeki `build_apk.ps1` scriptini çalıştırın:
-   ```powershell
-   .\build_apk.ps1
-   ```
-2. Üretilen `AkademikAsistan.apk` dosyasını USB kablosu, WhatsApp, Google Drive veya Bluetooth ile telefonunuza gönderin.
-3. Telefonda dosyaya tıklayıp **Yükle** seçeneğini seçin.
+### 1. Android APK Olarak Derleme
+Proje ana dizinindeki PowerShell derleme betiğini çalıştırarak yerel APK üretebilirsiniz:
+```powershell
+.\build_apk.ps1
+```
 
-### Seçenek 2: Expo Go ile Kablosuz ve Anında Test
-1. Telefonunuza Google Play Store'dan **Expo Go** uygulamasını yükleyin.
-2. Bilgisayarınızda terminalden şu komutu çalıştırın:
-   ```bash
-   npx expo start
-   ```
-3. Terminalde beliren **QR Kodu** telefonunuzdaki Expo Go uygulamasıyla taratın. Uygulama saniyeler içinde telefonunuzda açılacaktır.
+### 2. Expo Go ile Geliştirici Modunda Çalıştırma
+```bash
+# Bağımlılıkları yükleyin
+npm install
+
+# Yerel geliştirme sunucusunu başlatın
+npx expo start
+```
+Terminalde çıkan QR kodu telefonunuzdaki **Expo Go** uygulamasıyla taratarak geliştirme ortamında anlık test edebilirsiniz.
 
 ---
 
@@ -50,26 +83,22 @@
 ```
 Akademik Asistan/
 ├── src/
-│   ├── types/               # TypeScript tip tanımları ve sabitler
+│   ├── types/               # TypeScript tip tanımları ve arayüzler
 │   ├── services/
-│   │   ├── storage.ts       # AsyncStorage yerel veri tabanı servisi
+│   │   ├── storage.ts       # Yerel veri tabanı (AsyncStorage/Web)
 │   │   ├── suggestions.ts   # Akıllı tahmin & oto-tamamlama motoru
-│   │   └── notifications.ts # Expo yerel bildirim motoru
-│   ├── components/
-│   │   ├── Header.tsx       # Üst başlık ve tarih çubuğu
-│   │   ├── CourseCard.tsx   # Ders kartı (rozetler, süre sayacı, silme/düzenleme)
-│   │   ├── AddCourseModal.tsx # Akıllı tahminli ders ekleme penceresi
-│   │   ├── TimePickerModal.tsx # Saat ve dakika seçici
-│   │   └── BottomNav.tsx    # Alt sekme gezinme menüsü
-│   ├── screens/
-│   │   ├── ScheduleScreen.tsx # Haftalık program ekranı ve arama
-│   │   ├── TodayScreen.tsx    # Bugünün ders akışı ve aktif ders sayacı
-│   │   ├── NotesExamsScreen.tsx # GNO hesaplayıcı, sınavlar ve devamsızlık
-│   │   └── SettingsScreen.tsx   # Bildirim testleri, ayarlar ve veri sıfırlama
-│   └── utils/
-│       ├── time.ts          # Zaman hesaplamaları ve formatlama
-│       └── theme.ts         # Renk ve tema stilleri
-├── App.tsx                  # Ana uygulama bileşeni
-├── app.json                 # Mobil izinler ve paket yapılandırması
-└── build_apk.ps1            # Tek tıkla APK derleme aracı
+│   │   ├── notifications.ts # Yerel bildirim motoru
+│   │   └── wallpaperService.ts # Kilit ekranı afişi üretim motoru
+│   ├── components/          # Yeniden kullanılabilir UI bileşenleri
+│   ├── screens/             # Uygulama ana ekranları (Bugün, Program, Notlar, Ayarlar)
+│   └── utils/               # Tema, çoklu dil ve zaman yardımcıları
+├── public/                  # PWA manifest, .nojekyll ve ikonlar
+├── app.json                 # Expo yapılandırması
+└── package.json             # Bağımlılıklar ve dağıtım scriptleri
 ```
+
+---
+
+## 📄 Lisans
+
+Bu proje [MIT Lisansı](LICENSE) altında lisanslanmıştır.
